@@ -3,8 +3,8 @@ console.log('Loaded!');
 var counter=0;
 
 var button=document.getElementById("counter");
-button.onClick=function(){
-    debugger;
+button.onclick=function(){
+   
     counter=counter+1;
     var count=document.getElementById("count");
     
