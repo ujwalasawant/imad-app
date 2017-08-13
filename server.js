@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var articles={
     'article-One':{
     title:'Article One|Ujwala Sawant',
-    header:'Article One',
+    heading:'Article One',
     date:'11 August 2017',
     content:` <p>
                    This is first article.
@@ -29,7 +29,7 @@ var articles={
     },
     'article-Two':{
     title:'Article One|Ujwala Sawant',
-    header:'Article Two',
+    heading:'Article Two',
     date:'11 August 2017',
     content:` <p>
                    This is first article.
@@ -42,7 +42,7 @@ var articles={
     },
     'article-Three':{
           title:'Article One|Ujwala Sawant',
-    header:'Article Three',
+    heading:'Article Three',
     date:'11 August 2017',
     content:` <p>
                    This is first article.
@@ -57,7 +57,7 @@ var articles={
 
 function createTemplate(data)
 {
-var title=data.title;
+//var title=data.title;
 var heading=data.heading;
 var date=data.date;
 var conetnt=data.content;
