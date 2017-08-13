@@ -4,16 +4,16 @@ console.log('Loaded!');
 
 var button=document.getElementById("counter");
 button.onclick=function(){
-  
+  alert("heloo")
   var req=new XMLHttpRequest();
   
-  req.onreadtstatechange=function()
+  req.onreadystatechange=function()
   {
       if(req.readyState===XMLHttpRequest.DONE)
       {
           if(req.status===200)
           {
-              alert("heloo")
+              
                 var counter=req.responseText;
                 var count=document.getElementById("count");
                 console.log(counter);  
