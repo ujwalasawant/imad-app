@@ -8,5 +8,5 @@ button.onclick=function(){
     counter=counter+1;
     var count=document.getElementById("count");
   console.log(counter);  
-    count.innerHtml=counter.toString();
+    count.innerHTML=counter.toString();
 }
