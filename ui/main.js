@@ -9,9 +9,9 @@ button.onclick=function(){
   
   req.onreadtstatechange=function()
   {
-      if(req.readyState==XMLHttpRequest.Done)
+      if(req.readyState===XMLHttpRequest.DONE)
       {
-          if(req.status==200)
+          if(req.status===200)
           {
                 var counter=req.responseText;
                 var count=document.getElementById("count");
