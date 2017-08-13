@@ -13,6 +13,7 @@ button.onclick=function(){
       {
           if(req.status===200)
           {
+              alert("heloo")
                 var counter=req.responseText;
                 var count=document.getElementById("count");
                 console.log(counter);  
