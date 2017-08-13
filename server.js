@@ -28,7 +28,7 @@ var articles={
                </p>`
     },
     'article-Two':{
-          title:'Article One|Ujwala Sawant',
+    title:'Article One|Ujwala Sawant',
     header:'Article Two',
     date:'11 August 2017',
     content:` <p>
@@ -103,13 +103,6 @@ app.get('/:articleName', function (req, res) {
    res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
 
 app.get('/ui/madi.png', function (req, res) {
