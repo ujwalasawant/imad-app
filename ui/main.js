@@ -4,7 +4,7 @@ console.log('Loaded!');
 
 var button=document.getElementById("counter");
 button.onclick=function(){
-  alert("heloo")
+  
   var req=new XMLHttpRequest();
   
   req.onreadystatechange=function()
