@@ -21,7 +21,7 @@ button.onclick=function(){
       }
   };
   
-  req.open("GET","http://ujwala1512.imad.hasura-app.io/counter");
+  req.open("GET","http://ujwala1512.imad.hasura-app.io/counter",true);
   req.send(null);
    
 }
