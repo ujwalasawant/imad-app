@@ -1,12 +1,27 @@
 console.log('Loaded!');
 
-var counter=0;
+
 
 var button=document.getElementById("counter");
 button.onclick=function(){
   
-    counter=counter+1;
-    var count=document.getElementById("count");
-  console.log(counter);  
-    count.innerHTML=counter.toString();
+  var req=new XMLHttpRequest();
+  
+  req.onreadtstatechange=function()
+  {
+      if(req.readyState==XMLHttpRequest.Done)
+      {
+          if(req.status==200)
+          {
+                var counter=req.responseText;
+                var count=document.getElementById("count");
+                console.log(counter);  
+                count.innerHTML=counter.toString();
+          }
+      }
+  };
+  
+  req.open("GET","http://ujwala1512.imad.hasura-app.io/counter");
+  req.send(null);
+   
 }
